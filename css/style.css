@@ -59,7 +59,8 @@ body {
 
 .col-6 {
 
-    width: calc((100% / 12) * 6);
+    width: calc((100% / 12) * 2);
+    aspect-ratio: 1;
 
 }
 
@@ -92,7 +93,8 @@ body {
         display: flex;
         margin-bottom: 2.5rem;
         justify-content: center;
-
+        overflow-y: scroll;
+        
         .row {
             width: 100%;
             display: flex;
