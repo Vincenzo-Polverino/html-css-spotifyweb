@@ -1,5 +1,73 @@
-*{
+/* #region DEBUG */
+.debug * {
+    
+    border: 1px dashed black;
+}
+
+.debug .sidebar {
+
+    background-color: aqua;
+}
+
+.debug .player {
+
+    background-color: blueviolet;
+    
+}
+
+.debug .content {
+    
+    background-color: brown;
+}
+
+/* #endregion DEBUG */
+
+
+/* #region COMMON */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    overflow: 
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* #endregion COMMON */
+
+
+
+
+
+
+
+.content {
+    width: 800px;
+    height: 800px;
+    align-items: end;
+    
+}
+
+.sidebar {
+    width: 250px;
+    height: 900px;
+    align-items: start;
+    
+}
+
+
+.player {
+    height: 100px;
+    width: 100%;
+    justify-content: end;
+    
 }
