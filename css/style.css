@@ -1,6 +1,6 @@
 /* #region DEBUG */
 .debug * {
-    
+
     border: 1px dashed black;
 }
 
@@ -12,13 +12,34 @@
 .debug .player {
 
     background-color: blueviolet;
-    
+
 }
 
 .debug .content {
-    
+
     background-color: brown;
 }
+
+.debug .top-bar{
+    background-color: green;
+}
+
+.debug .row {
+    background-color: rgb(247, 10, 10);
+}
+
+.debug .col-6 {
+
+    height: 250px;
+    background-color: yellow;
+
+}
+
+.debug .content>.container{
+
+    background-color: grey;
+}
+
 
 /* #endregion DEBUG */
 
@@ -32,14 +53,14 @@
 }
 
 body {
-    overflow: 
+    overflow: hidden;
     height: 100vh;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    
+.col-6 {
+
+    width: calc((100% / 12) * 6);
+
 }
 
 /* #endregion COMMON */
@@ -47,27 +68,50 @@ main{
 
 
 
-
+.container {
+    display: flex;
+}
 
 
 .content {
-    width: 800px;
-    height: 800px;
-    align-items: end;
-    
+    width: calc(100% - 250px);
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .top-bar {
+        width: 100%;
+        height: 80px;
+    }
+
+    .container {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        margin-bottom: 2.5rem;
+        justify-content: center;
+
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+
 }
+
 
 .sidebar {
     width: 250px;
-    height: 900px;
-    align-items: start;
-    
+    height: calc(100vh - 80px);
 }
 
 
 .player {
-    height: 100px;
+    height: 80px;
     width: 100%;
-    justify-content: end;
-    
 }
