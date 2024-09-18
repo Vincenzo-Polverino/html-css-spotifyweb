@@ -195,6 +195,12 @@ img {
             margin-top: 9rem;
             padding-top: 2.5rem;
         }
+
+
+        .popular img{
+            border-radius: 50%;
+        }
+        
     }
     
     
