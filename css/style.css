@@ -96,6 +96,11 @@ img {
         align-items: center;
         z-index: 5;
 
+        a:hover{
+            font-size: 11px;
+
+        }
+
         a {
             color: white;
             position: absolute;
