@@ -236,20 +236,27 @@ img {
     background-color: black;
     flex-direction: column;
     display: flex;
-    
+
 
     img:not(.logo_lg) {
         width: 30px;
         margin: 0.5rem;
-        
-        .home{
-           
-            
-        }
-        
-    
-    }
 
+        
+        
+    }
+    
+    .home {
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: white;
+           
+
+        }
+    }
 }
 
 
