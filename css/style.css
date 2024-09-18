@@ -138,6 +138,10 @@ img {
                 list-style: none;
                 flex-wrap: wrap;
 
+                a:hover{
+                    color: white;
+                }
+
                 li>a {
 
                     text-decoration: none;
