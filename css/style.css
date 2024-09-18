@@ -240,20 +240,24 @@ img {
 
     img:not(.logo_lg) {
         width: 30px;
-        margin: 0.5rem;
-
-        
+        margin: 0.5rem;  
         
     }
     
-    .home {
+    .home, .search, .library {
         display: flex;
         align-items: center;
-
+        
         a {
             text-decoration: none;
             color: white;
-           
+
+            @media screen and (max-width: 600px) {
+                display: none;
+        
+            }
+
+
 
         }
     }
@@ -295,8 +299,16 @@ img {
 
 
 
+
+
+
+
+
+
     .sidebar {
         width: 50px;
+
+
     }
 
 
