@@ -237,13 +237,22 @@ img {
     flex-direction: column;
     display: flex;
 
+    .logo_lg {
+
+        margin-bottom: 2rem;
+
+    }
+
     .logo_sm {
         display: none;
 
         @media screen and (max-width: 600px) {
             display: block;
+            margin-bottom: 2rem;
 
         }
+
+
     }
 
 
@@ -251,17 +260,36 @@ img {
         width: 30px;
         margin: 0.5rem;
 
+
+
     }
+
+    .home:hover {
+
+        filter: invert(0);
+    }
+    .search:hover {
+
+        filter: invert(0);
+    }
+    .library:hover {
+
+        filter: invert(0);
+    }
+
+  
 
     .home,
     .search,
     .library {
+        filter: invert(0.5);
         display: flex;
         align-items: center;
 
         a {
             text-decoration: none;
             color: white;
+
 
             @media screen and (max-width: 600px) {
                 display: none;
