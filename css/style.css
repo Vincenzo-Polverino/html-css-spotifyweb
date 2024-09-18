@@ -321,13 +321,20 @@ img {
                 font-weight: 700;
                 line-height: 2rem;
                 list-style: none;
+                
                 a{
                     text-decoration: none;
                     color: #555454;
                 }
+
+                a:hover{
+                    color: white;
+                }
             }
         }
 
+
+        
        
         span{
             margin: 0.5rem;
@@ -335,13 +342,22 @@ img {
 
         }
 
+        .fa-square-plus:hover{
+            color: white;
+        }
+
+
         .fa-square-plus {
-            color: #a3a3a3;
+            display: flex;
+            color: #555454;
             font-size: 50px;
             text-decoration: none;
-            
+            align-items: center;
 
-
+            span{
+                font-size: 16px;
+                
+            }
         }
     }
 }
