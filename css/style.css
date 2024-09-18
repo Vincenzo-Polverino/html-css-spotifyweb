@@ -131,6 +131,11 @@ img {
 
         }
 
+        .download{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         nav {
             align-self: center;
@@ -213,6 +218,13 @@ img {
 
                     .card {
                         margin: 0.5rem;
+                        position: relative;
+
+                        i{position:absolute;
+                            top: 33%;
+                            left: 33%;
+                        
+                        font-size:80px}
 
                     }
                 }
