@@ -237,24 +237,35 @@ img {
     flex-direction: column;
     display: flex;
 
+    .logo_sm {
+        display: none;
+
+        @media screen and (max-width: 600px) {
+            display: block;
+
+        }
+    }
+
 
     img:not(.logo_lg) {
         width: 30px;
-        margin: 0.5rem;  
-        
+        margin: 0.5rem;
+
     }
-    
-    .home, .search, .library {
+
+    .home,
+    .search,
+    .library {
         display: flex;
         align-items: center;
-        
+
         a {
             text-decoration: none;
             color: white;
 
             @media screen and (max-width: 600px) {
                 display: none;
-        
+
             }
 
 
@@ -300,7 +311,9 @@ img {
 
 
 
-
+    .logo_lg {
+        display: none;
+    }
 
 
 
