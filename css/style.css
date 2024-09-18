@@ -54,7 +54,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -238,9 +238,8 @@ img {
     display: flex;
 
     .logo_lg {
-
-        margin-bottom: 2rem;
-
+        margin: 1rem;
+        width: 70%;
     }
 
     .logo_sm {
@@ -249,35 +248,29 @@ img {
         @media screen and (max-width: 600px) {
             display: block;
             margin-bottom: 2rem;
-
         }
-
-
     }
 
 
     img:not(.logo_lg) {
         width: 30px;
-        margin: 0.5rem;
-
-
-
+        margin: 1rem;
     }
 
     .home:hover {
-
         filter: invert(0);
+        border-left: 2px solid #a2ef2c;
     }
+
     .search:hover {
-
         filter: invert(0);
+        border-left: 2px solid #a2ef2c;
     }
+
     .library:hover {
-
         filter: invert(0);
+        border-left: 2px solid #a2ef2c;
     }
-
-  
 
     .home,
     .search,
@@ -290,12 +283,63 @@ img {
             text-decoration: none;
             color: white;
 
-
             @media screen and (max-width: 600px) {
                 display: none;
-
             }
 
+        }
+
+    }
+
+    .playlist {
+        color: white;
+        font-weight: 700;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+        
+    }
+
+    .create_pl {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1rem;
+        color: #555454;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+        
+        ul{
+            margin-top: 1rem;
+            li{
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 2rem;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: #555454;
+                }
+            }
+        }
+
+       
+        span{
+            margin: 0.5rem;
+            font-weight: 700;
+
+        }
+
+        .fa-square-plus {
+            color: #a3a3a3;
+            font-size: 50px;
+            text-decoration: none;
+            
 
 
         }
