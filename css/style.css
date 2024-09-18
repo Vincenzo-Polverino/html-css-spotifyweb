@@ -1,7 +1,7 @@
 /* #region DEBUG */
 .debug * {
 
-    border: 1px dashed black;
+    border: 1px dashed white;
 }
 
 .debug .sidebar {
@@ -96,7 +96,7 @@ img {
         align-items: center;
         z-index: 5;
 
-        a:hover{
+        a:hover {
             font-size: 11px;
 
         }
@@ -131,7 +131,7 @@ img {
 
         }
 
-        .download{
+        .download {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -148,7 +148,7 @@ img {
                 list-style: none;
                 flex-wrap: wrap;
 
-                a:hover{
+                a:hover {
                     color: white;
                 }
 
@@ -220,13 +220,34 @@ img {
                         margin: 0.5rem;
                         position: relative;
 
-                        i{position:absolute;
-                            top: 33%;
-                            left: 33%;
-                        
-                        font-size:80px}
+                        .playicon_box {
+                            display: none;
+                        }
 
                     }
+
+                    .card:hover {
+                        .playicon_box {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #00000070;
+
+                            i {
+                                color: white;
+                                font-size: 80px
+                            }
+
+
+                        }
+                    }
+
+
                 }
             }
 
@@ -257,6 +278,7 @@ img {
     background-color: black;
     flex-direction: column;
     display: flex;
+    position: relative;
 
     .logo_lg {
         margin: 1rem;
@@ -300,6 +322,7 @@ img {
         display: flex;
         align-items: center;
 
+
         a {
             text-decoration: none;
             color: white;
@@ -321,7 +344,7 @@ img {
         @media screen and (max-width: 600px) {
             display: none;
         }
-        
+
     }
 
     .create_pl {
@@ -334,36 +357,37 @@ img {
         @media screen and (max-width: 600px) {
             display: none;
         }
-        
-        ul{
+
+
+
+        ul {
             margin-top: 1rem;
-            li{
+
+            li {
                 font-size: 12px;
                 font-weight: 700;
                 line-height: 2rem;
                 list-style: none;
-                
-                a{
+
+                a {
                     text-decoration: none;
                     color: #555454;
                 }
 
-                a:hover{
+                a:hover {
                     color: white;
                 }
             }
         }
 
 
-        
-       
-        span{
+        span {
             margin: 0.5rem;
             font-weight: 700;
 
         }
 
-        .fa-square-plus:hover{
+        .fa-square-plus:hover {
             color: white;
         }
 
@@ -375,14 +399,92 @@ img {
             text-decoration: none;
             align-items: center;
 
-            span{
+            span {
                 font-size: 16px;
-                
+
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+    .install_box {
+        position: absolute;
+        bottom: 60px;
+        border-bottom:1px solid #555454;
+        width: 85%;
+        margin-left: 1rem;
+        @media screen and (max-width: 600px) {
+            border-bottom: 0;
+        }
+
+
+        .install:hover {
+            img {
+                filter: invert(0);
+            }
+    
+            a {
+                color: white;
+            }
+        }
+    
+        .install {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-left:-15px;
+        
+    
+            a {
+                text-decoration: none;
+                color: #555454;
+                margin-left:-12px;
+                font-weight: 700;
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
+    
+            }
+    
+            img {
+                width: 16px;
+                filter: invert(0.5);
             }
         }
     }
-}
 
+    .user{
+
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+
+        span{
+            color: white;
+            font-weight: 700;
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+
+        }
+
+        img{
+            background-color: #555454;
+            border-radius: 50%;
+            aspect-ratio: 1;
+        }
+    }
+    
+}
 
 
 
