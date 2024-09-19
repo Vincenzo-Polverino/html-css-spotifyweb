@@ -153,6 +153,10 @@ img {
                     color: white;
                 }
 
+                li:first-child{
+                    border-bottom: 2px solid #a2ef2c;
+                }
+
                 li>a {
 
                     text-decoration: none;
