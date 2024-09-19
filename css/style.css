@@ -538,7 +538,7 @@ img {
         #timing {
 
             height: 4px;
-            width: 27%;
+            width: 25%;
             background-color: #aaa8a8;
             border-radius: 2px;
             display: flex;
@@ -547,7 +547,7 @@ img {
 
             #t-circle {
 
-                margin-left: %;
+                margin-left: 100%;
                 background-color: white;
                 width: 15px;
                 min-width: 15px;
@@ -600,7 +600,7 @@ img {
 
             #v-circle {
 
-                margin-left: 1rem;
+                margin-left: 100%;
                 background-color: white;
                 width: 15px;
                 min-width: 15px;
