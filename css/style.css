@@ -142,6 +142,8 @@ img {
 
 
 
+
+
             ul {
                 display: flex;
                 list-style: none;
@@ -292,37 +294,56 @@ img {
     }
 
 
-    img:not(.logo_lg) {
+    i,img:not(.logo_lg) {
+        font-size: 30px;
         width: 30px;
         margin: 1rem;
     }
 
+    .library_icon{
+        filter: invert(0.5);
+    }
+
     .home:hover {
-        filter: invert(0);
-        border-left: 2px solid #a2ef2c;
+        color: white;
+        a{color: white;}
+
     }
 
     .search:hover {
-        filter: invert(0);
-        border-left: 2px solid #a2ef2c;
+        color: white;
+        a{color: white;}
+
     }
 
     .library:hover {
-        filter: invert(0);
+        a{
+            color: white;
+        }
+        .library_icon{
+            filter: invert(0);
+        }
+
+    }
+
+    .home {
         border-left: 2px solid #a2ef2c;
+    }
+    .search, .library{
+        border-left: 2px solid transparent;
     }
 
     .home,
     .search,
     .library {
-        filter: invert(0.5);
+        color:#555454;
         display: flex;
         align-items: center;
 
 
         a {
             text-decoration: none;
-            color: white;
+            color:#555454;
 
             @media screen and (max-width: 600px) {
                 display: none;
@@ -331,6 +352,8 @@ img {
         }
 
     }
+
+
 
     .playlist {
         color: white;
@@ -491,20 +514,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 
     .input-player {
         width: 20vw;
-        
+
 
         .input-icons {
             color: white;
             text-align: center;
             display: flex;
-            justify-content: center ;
+            justify-content: center;
             align-items: center;
             margin-bottom: 0.5rem;
-            
+
 
             i {
                 margin: 1px 5px;
@@ -523,16 +546,16 @@ img {
 
     #progression-bar {
         height: 4px;
-        width: 100% ;
-       
+        width: 100%;
+
         background-color: #555454;
-        
+
         border-radius: 2px;
         margin-bottom: rem;
         display: flex;
-        
-        
-        
+
+
+
 
 
         #timing {
