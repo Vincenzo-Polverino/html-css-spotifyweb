@@ -547,7 +547,7 @@ img {
 
             #t-circle {
 
-                margin-left: 100%;
+                margin-left: %;
                 background-color: white;
                 width: 15px;
                 min-width: 15px;
@@ -587,7 +587,7 @@ img {
         height: 4px;
         width: 5vw;
         background-color: #555454;
-        margin-right: 1rem;
+        margin-right: 5px;
         border-radius: 2px;
 
         #volume {
@@ -600,7 +600,7 @@ img {
 
             #v-circle {
 
-                margin-left: 100%;
+                margin-left: 1rem;
                 background-color: white;
                 width: 15px;
                 min-width: 15px;
@@ -635,11 +635,11 @@ img {
 .listening {
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    margin-left: 5px;
 
     i {
         color: #555454;
-        padding: 2px 5px;
+        padding: 2px 2px;
 
         @media screen and (max-width: 600px) {
             display: flex;
@@ -647,7 +647,11 @@ img {
     }
 
     .song-info {
-        padding: 1rem;
+        padding: 5px;
+
+        @media screen and (max-width: 600px) {
+            margin-right: -30px;
+        }
     }
 
     #album {
@@ -662,7 +666,6 @@ img {
             font-size: 12px;
             font-weight: 600;
             display: flex;
-            gap: 2px;
             text-decoration: none;
         }
 
@@ -672,7 +675,7 @@ img {
         }
 
         @media screen and (max-width: 600px) {
-            display: inline-block;
+            width: 50%;
         }
     }
 
@@ -735,5 +738,19 @@ img {
 
 
     }
+
+
+}
+
+
+@media screen and (max-width: 366px) {
+
+    .col-12-xs {
+        width: calc((100% / 12) * 12);
+
+
+    }
+
+
 
 }
