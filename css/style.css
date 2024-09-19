@@ -490,6 +490,35 @@ img {
     background-color: #282828;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    .audio-options{
+        color:white;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        #audio-bar{
+
+            height: 4px;
+            width: 100px;
+            background-color:#555454;
+            margin-right: 1rem;
+            border-radius: 2px;
+
+            #volume{
+                height: 4px;
+                width: 25px;
+                background-color:#aaa8a8;
+                border-radius: 2px;
+
+
+            }
+
+
+        }
+
+    }
 
     .listening {
         display: flex;
