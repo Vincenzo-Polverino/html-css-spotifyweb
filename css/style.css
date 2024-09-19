@@ -275,6 +275,7 @@ img {
     display: flex;
     position: relative;
     overflow: auto;
+    overflow-x: hidden;
     justify-content: space-between;
 
     .logo_lg {
