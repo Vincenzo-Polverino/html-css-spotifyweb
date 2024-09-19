@@ -739,18 +739,21 @@ img {
 
 
 
-
-
+    
+    
     .logo_lg {
         display: none;
     }
 
-
-
+    
+    
 
     .sidebar {
         width: 50px;
-
+        
+        .fa-house, .fa-magnifying-glass{
+            font-size: 20px;
+        }
 
     }
 
