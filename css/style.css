@@ -93,8 +93,8 @@ img {
         background-color: #00000070;
         text-align: right;
         position: sticky;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         z-index: 2;
 
         a:hover {
@@ -269,14 +269,13 @@ img {
 .sidebar {
     width: 250px;
     height: calc(100vh - 80px);
-    z-index: 1000;
     background-color: black;
     flex-direction: column;
     display: flex;
-    position: relative;
     overflow: auto;
     overflow-x: hidden;
     justify-content: space-between;
+
 
     .logo_lg {
         margin: 1rem;
@@ -414,8 +413,6 @@ img {
 
 
     .install_box {
-       
-        bottom: 60px;
         border-bottom: 1px solid #555454;
         width: 85%;
         margin-left: 1rem;
@@ -491,6 +488,54 @@ img {
     height: 80px;
     width: 100%;
     background-color: #282828;
+    display: flex;
+    align-items: center;
+
+    .listening {
+        display: flex;
+        align-items: center;
+
+        i{
+            color:#555454;
+            padding: 2px 5px;
+
+            @media screen and (max-width: 600px) {
+                display: flex;
+            }
+        }
+
+        .song-info{
+            padding: 1rem;
+        }
+
+        #album {
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        #track{
+            color: #555454;
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+
+            div{
+                padding: 1px;
+            }
+           
+            @media screen and (max-width: 600px) {
+                display: inline-block;
+            }
+        }
+
+        img {
+            width: 50px;
+            aspect-ratio: 1;
+        }
+    }
+
+
 }
 
 
