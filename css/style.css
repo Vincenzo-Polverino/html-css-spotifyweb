@@ -89,12 +89,13 @@ img {
     .top-bar {
         width: 100%;
         height: 80px;
-        position: fixed;
-        margin-bottom: 5rem;
+        padding: 1.5rem;
         background-color: #00000070;
-        display: flex;
-        align-items: center;
-        z-index: 5;
+        text-align: right;
+        position: sticky;
+        top:0;
+        left:0;
+        z-index: 2;
 
         a:hover {
             font-size: 11px;
@@ -103,8 +104,7 @@ img {
 
         a {
             color: white;
-            position: absolute;
-            right: 25px;
+            display: inline-block;
             border: 1px solid white;
             border-radius: 25px;
             padding: 0.5rem 1.5rem;
@@ -139,8 +139,7 @@ img {
 
         nav {
             align-self: center;
-            position: absolute;
-            top: 90px;
+
 
 
             ul {
@@ -253,11 +252,7 @@ img {
 
         }
 
-        .r-played {
-
-            margin-top: 9rem;
-            padding-top: 2.5rem;
-        }
+        .r-played {}
 
 
         .popular img {
@@ -279,6 +274,8 @@ img {
     flex-direction: column;
     display: flex;
     position: relative;
+    overflow: auto;
+    justify-content: space-between;
 
     .logo_lg {
         margin: 1rem;
@@ -416,11 +413,12 @@ img {
 
 
     .install_box {
-        position: absolute;
+       
         bottom: 60px;
-        border-bottom:1px solid #555454;
+        border-bottom: 1px solid #555454;
         width: 85%;
         margin-left: 1rem;
+
         @media screen and (max-width: 600px) {
             border-bottom: 0;
         }
@@ -430,30 +428,30 @@ img {
             img {
                 filter: invert(0);
             }
-    
+
             a {
                 color: white;
             }
         }
-    
+
         .install {
             display: flex;
             align-items: center;
             font-size: 12px;
-            margin-left:-15px;
-        
-    
+            margin-left: -15px;
+
             a {
                 text-decoration: none;
                 color: #555454;
-                margin-left:-12px;
+                margin-left: -12px;
                 font-weight: 700;
+
                 @media screen and (max-width: 600px) {
                     display: none;
                 }
-    
+
             }
-    
+
             img {
                 width: 16px;
                 filter: invert(0.5);
@@ -461,29 +459,28 @@ img {
         }
     }
 
-    .user{
+    .user {
 
         display: flex;
         align-items: center;
-        position: absolute;
-        bottom: 0;
 
-        span{
+        span {
             color: white;
             font-weight: 700;
+
             @media screen and (max-width: 600px) {
                 display: none;
             }
 
         }
 
-        img{
+        img {
             background-color: #555454;
             border-radius: 50%;
             aspect-ratio: 1;
         }
     }
-    
+
 }
 
 
